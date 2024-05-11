@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #141414;
+  font-family: "Roboto", sans-serif;
+}
+.category-font {
+  font-family: "Sedan SC", serif;
+}
+.name-font {
+  font-family: "Sedgwick Ave Display", cursive;
+}
