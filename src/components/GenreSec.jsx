@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useEffect, useState } from "react";
 import MovieModal from "./MovieModal";
 import noImage from "../assets/images/no-image.jpg";
@@ -51,7 +53,7 @@ const GenreSec = ({
   };
 
   return (
-    <div className="w-full h-10 px-7 mt-10 mb-10">
+    <div className="w-full h-10 px-7 mt-10 mb-40px">
       {title && (
         <div className="text-2xl text-white mb-5">
           <a onClick={() => setSelectedGenreId(null)}>{title}</a> {">"}{" "}
@@ -59,17 +61,31 @@ const GenreSec = ({
         </div>
       )}
 
-      <div className={`grid grid-cols-${col} gap-10`}>
+      <div
+        className={`grid gap-10 ${
+          {
+            1: "grid-cols-1",
+            2: "grid-cols-2",
+            3: "grid-cols-3",
+            4: "grid-cols-4",
+            5: "grid-cols-5",
+            6: "grid-cols-6",
+            7: "grid-cols-7",
+            8: "grid-cols-8",
+          }[col] || "grid-cols-4"
+        }`}
+      >
         {items.map((item, index) => (
           <div key={index} onClick={() => handleClick(item)}>
             <img
               src={
                 item.poster_path
                   ? `https://image.tmdb.org/t/p/w300${item.poster_path}`
-                  : noImage 
+                  : noImage
               }
               alt=""
-              className="rounded-lg" style={{minHeight: "100%"}}
+              className="rounded-lg"
+              style={{ minHeight: "100%" }}
             />
           </div>
         ))}
