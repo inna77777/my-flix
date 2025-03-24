@@ -2,7 +2,7 @@
 
 Flix is a Netflix clone project developed using React, Model, and styled with Tailwind CSS. This project aims to replicate the user interface and functionality of Netflix's frontend, providing a responsive and modern UI with movie and show listings.
 
-🔗 **Live Demo:** [Pizza House](https://my-flix777.netlify.app/)  
+🔗 **Live Demo:** [MyFlix](https://my-flix777.netlify.app/)  
 
 ## Features
 
