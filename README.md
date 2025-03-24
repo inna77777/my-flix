@@ -22,7 +22,7 @@ To get started with Flix, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/flix.git](https://github.com/inna77777/my-flix.git
+   git clone https://github.com/inna77777/my-flix.git
    ```
 
 2. Navigate to the project directory:
